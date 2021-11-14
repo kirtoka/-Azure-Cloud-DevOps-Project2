@@ -1,26 +1,25 @@
 [![Python application test with Github Actions](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/actions/workflows/pythonapp.yml)
 
-![CI](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/workflows/CI/badge.svg)
 
-# 🌻 Overview
+## 🌻 Overview
 
 This is the Project #2 of the the UDACITY Nanodegree "Cloud DevOps using Microsoft Azure" provides integration Python Flask app to predict housing prices with Azure Pipelines to enable Continuous Delivery to Azure App Service.
 
-# 💼 Project Plan
+## 💼 Project Plan
 Plan includes theory preparations and perform next stages:
 * Preparation:
-    - A link to a Trello board for the project (https://trello.com/b/HPLTx4cX/project2)
+    - A link to a Trello board for the project ![Link to trello] (https://trello.com/b/HPLTx4cX/project2)
     - A link to a spreadsheet that includes the original and final project plan (https://docs.google.com/spreadsheets/d/1w6LxbBvQFOybaVchvDr1peQVxrUASt26_UQUmS6g8_E/edit#gid=1348135932)
 * CI: Set Up Azure Cloud Shell
 * CI: Configure GitHub Actions
 * Continuous Delivery on Azure
 * Test and Demo
 
-# ⛳ Instructions
+## ⛳ Instructions
 Architecture Diagram
 ![Architecture Diagram](./screenshots/Screenshot_6.png "Architecture Diagram")
 
-## Set Up Azure Cloud Shell
+### Set Up Azure Cloud Shell
 1. Generate ssh key in Azure CLI by command `ssh-keygen -t rsa`, after that `cat /home/vera/.ssh/id_rsa.pub`
 we have to copy result to github Settings-> Deploy Keys
 ![ssh-keygen](./screenshots/Screenshot_7.png "ssh-keygen")
@@ -42,7 +41,7 @@ we have to copy result to github Settings-> Deploy Keys
 
 7. To create the web app we run this command `az webapp up --sku F1 -l eastus2 -g "udcaity-project2-rg" -n "flask-ml-project2-app"` 
 
-## CI: Configure GitHub Actions
+### CI: Configure GitHub Actions
 Now we have to create configuration file for CI by chosing in GitHub Action->setup a workflow yourself and paste next code 
 ```
 name: Python application test with Github Actions
@@ -70,7 +69,7 @@ jobs:
 ```
 ![GitHub Action](./screenshots/Screenshot_2.png "GitHub Action")
 
-## Continuous Delivery on Azure
+### Continuous Delivery on Azure
 Now we can configure CD on Azure:
  * Open dev.azure.com;
  * Create Pipeline in Azure Pipilenes
@@ -80,7 +79,7 @@ Now we can configure CD on Azure:
  ![Deploy 1](./screenshots/Screenshot_18.png "Deploy 1")
  ![Deploy 2](./screenshots/Screenshot_19.png "Deploy 2")
 
-## Test
+### Test
  You can go to your web app through the Azure Portal interface by going to your app and find the URL here. 
  ![Web app url](./screenshots/Screenshot_3.png "Web App Url Screenshot")
  
@@ -93,11 +92,11 @@ Now we can configure CD on Azure:
  ![log tail](./screenshots/Screenshot_4.png "log tail")
 
 
-# Enhancements
+## Enhancements
 
 <TODO: A short description of how to improve the project in the future>
 
-# Demo 
+## Demo 
 
 <TODO: Add link Screencast on YouTube>
 
