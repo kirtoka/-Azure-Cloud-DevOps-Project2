@@ -1,3 +1,5 @@
+setup:
+	python3 -m venv ~/.az-dev-p2-env
 
 install:
 	pip install --upgrade pip &&\
