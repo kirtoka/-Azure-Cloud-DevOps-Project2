@@ -1,13 +1,15 @@
+---
+technology: devops-cicd
+author: Natalia Chirtoca
+date: 14.11.2021
+---
+
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python application test with Github Actions](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/actions/workflows/pythonapp.yml)
 [![Build Status](https://dev.azure.com/VeraChirtoca/Flask-ML-Deploy/_apis/build/status/kirtoka.Azure-Cloud-DevOps-Project2?branchName=main)](https://dev.azure.com/VeraChirtoca/Flask-ML-Deploy/_build/latest?definitionId=2&branchName=main)
 
----
-technology: devops-cicd
-author: Natalia Chirtoca
-ms.date: 14.11.2021
----
+
 
 ## 🌻 Overview
 This is the Project #2 of the the UDACITY Nanodegree "Cloud DevOps using Microsoft Azure" provides integration Python Flask app to predict housing prices with Azure Pipelines to enable Continuous Delivery to Azure App Service.
