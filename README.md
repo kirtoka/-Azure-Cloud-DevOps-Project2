@@ -6,7 +6,6 @@ date: 14.11.2021
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 [![Python application test with Github Actions](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/kirtoka/Azure-Cloud-DevOps-Project2/actions/workflows/pythonapp.yml)
-[![Build Status](https://dev.azure.com/VeraChirtoca/Flask-ML-Deploy/_apis/build/status/kirtoka.Azure-Cloud-DevOps-Project2?branchName=main)](https://dev.azure.com/VeraChirtoca/Flask-ML-Deploy/_build/latest?definitionId=2&branchName=main)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
