@@ -11,7 +11,8 @@ date: 14.11.2021
 
 
 ## 🌻 Overview
-This is the Project #2 of the the UDACITY Nanodegree "Cloud DevOps using Microsoft Azure" provides integration Python Flask app to predict housing prices with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+This is the Project #2 of the the UDACITY Nanodegree "Cloud DevOps using Microsoft Azure" provides deployment Python Flask application for prediction housing prices by using Continuous Integration and Continuous Delivery (CI/CD) on the Azure platform. Automated code testing has been implemented using GitHub Actions. After the web app successful deployment, we will see how machine learning prediction works.
+
 
 ## 💼 Project Plan
 * Preparation:
@@ -24,7 +25,7 @@ This is the Project #2 of the the UDACITY Nanodegree "Cloud DevOps using Microso
 
 ## ⛳ Instructions
 Architecture Diagram
-![Architecture Diagram](./screenshots/Screenshot_6.png "Architecture Diagram")
+![Architecture Diagram](./screenshots/Screenshot_6_2.png "Architecture Diagram")
 
 ### Set Up Azure Cloud Shell
 1. Generate ssh key in Azure CLI by command `ssh-keygen -t rsa`, after that `cat /home/vera/.ssh/id_rsa.pub`
@@ -97,11 +98,20 @@ Now we can configure CD on Azure:
 
  If you would to check the logs of your application you can see them using this command should see something like this below. `az webapp log tail -g "{resource-group-name}" -n "{app-name}"`
  ![log tail](./screenshots/Screenshot_4.png "log tail")
+ 
+ We can test our webapp with Locust. Locust is an easy-to-use, user load testing tool. It is intended for load-testing web sites (or other systems) and figuring out how many concurrent users a system can handle. Run tis command
+ `$ locust -f locustfile.py` to start Locust.
+
+ Now open your browser and go to localhost:8089, enter the number of users and the hatch rate to start the load testing.
+  ![locust test](./screenshots/Screenshot_5.png "locust test")
 
 
 ## Enhancements
 
-Better Tests in the Testing scripts
+- Better Tests in the Testing scripts.
+- Build an image of the app and push to an image registry and then do a containerized deployment. 
+- Deploy to a kubernetes cluster.
+
 
 ## Demo 
 
